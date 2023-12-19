@@ -1,0 +1,9 @@
+##Change column name from devices table.
+##Change column name string_field_0 TO Phone_Brand
+
+ALTER TABLE
+  brishti-project.Neo_Bank.devices RENAME COLUMN string_field_0 TO Phone_Brand;
+##Change column name string_field_1 TO user_id
+
+ALTER TABLE
+  brishti-project.Neo_Bank.devices RENAME COLUMN string_field_1 TO user_id;
