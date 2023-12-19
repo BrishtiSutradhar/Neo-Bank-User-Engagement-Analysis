@@ -1,0 +1,21 @@
+##Check devices table if there has any duplicate value
+################
+SELECT
+  user_id,
+  COUNT(*) AS count
+FROM
+  brishti-project.Neo_Bank.devices
+GROUP BY
+  user_id
+HAVING
+  COUNT(*) > 1;
+################
+SELECT
+  Phone_Brand,
+  COUNT(*) AS count
+FROM
+  brishti-project.Neo_Bank.devices
+GROUP BY
+  Phone_Brand
+HAVING
+  COUNT(*) > 1;
